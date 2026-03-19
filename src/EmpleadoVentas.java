@@ -44,5 +44,7 @@ public class EmpleadoVentas extends Empleado{ //herencia de la clase empleado
         System.out.println("Total de ventas: " + totalVentas);
     }
 
-
+    public double salarioV (){
+        return 0;
+    }
 }

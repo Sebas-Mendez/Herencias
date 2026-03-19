@@ -101,10 +101,107 @@ public class Main {
 
 
                 case 2:
-                    for (Empleado pet1 : lstEmpleado) {
-                        System.out.println(pet1);
+                    System.out.println("Elija los empleados que desea la info");
+                    System.out.println("1. Mostrar todos los empleados");
+                    System.out.println("2. Mostrar empleados administrativos");
+                    System.out.println("3. Mostrar empleados por horas");
+                    System.out.println("4. Mostrar empleados Ventas");
+                    System.out.println("5. Mostrar empleados mayores de edad");
+
+                    int op = teclado.nextInt();
+                    switch (op){
+                        case 1:
+                            for (Empleado E1 : lstEmpleado) {
+                                System.out.println(E1);
+                            }
+
+                            break;
+                        case 2:
+                            for (Empleado E2: lstEmpleado){
+                                if (E2 instanceof EmpleadoAdministrativo){
+                                    System.out.println(E2);
+                                    System.out.println("Ingrese la opcion de modificacion del empleado");
+                                    System.out.println("1. Aumentar Salario Base");
+                                    System.out.println("2: Calcular salario");
+                                    int cion = teclado.nextInt();
+                                    switch (cion){
+                                        case 1:
+                                            System.out.println("Sistema de Aumentar salario");
+                                            System.out.println("Ingrese el aumento del salario");
+                                            E2.salario(teclado.nextDouble());
+                                            break;
+                                        case 2:
+                                            System.out.println("Sistema de Calcular salario");
+                                            System.out.println("El salario total es: " + ((EmpleadoAdministrativo) E2).salarioA());
+                                            break;
+                                    }break;
+                                }
+
+                            }
+
+
+                            break;
+                        case 3:
+                            for (Empleado E2: lstEmpleado){
+                                if (E2 instanceof EmpleadoHoras){
+                                    System.out.println(E2);
+                                    System.out.println("Ingrese la opcion de modificacion del empleado");
+                                    System.out.println("1. Aumentar Salario Base");
+                                    System.out.println("2: Calcular salario");
+                                    int cion = teclado.nextInt();
+                                    switch (cion){
+                                        case 1:
+                                            System.out.println("Sistema de Aumentar salario");
+                                            System.out.println("Ingrese el aumento del salario");
+                                            System.out.println(E2.salario(teclado.nextDouble()));
+                                            break;
+                                        case 2:
+                                            System.out.println("Sistema de Calcular salario");
+
+                                            break;
+                                    }break;
+                                }
+
+                            }
+
+                            break;
+                        case 4:
+                            for (Empleado E2: lstEmpleado){
+                                if (E2 instanceof EmpleadoVentas){
+                                    System.out.println(E2);
+                                    System.out.println("Ingrese la opcion de modificacion del empleado");
+                                    System.out.println("1. Aumentar Salario Base");
+                                    System.out.println("2: Calcular salario");
+                                    int cion = teclado.nextInt();
+                                    switch (cion){
+                                        case 1:
+                                            System.out.println("Sistema de Aumentar salario");
+                                            System.out.println("Ingrese el aumento del salario");
+                                            System.out.println(E2.salario(teclado.nextDouble()));
+                                            break;
+                                        case 2:
+                                            System.out.println("Sistema de Calcular salario");
+
+                                            break;
+                                    }break;
+
+                                }
+
+                            }
+
+
+                            break ;
+                        case 5:
+                            for (Empleado E3 : lstEmpleado) {
+                                if (E3.getEdad()>18)
+                                    System.out.println(E3);
+
+                            }
+                            break;
+
                     }
                     break;
+
 
                 case 3:
                     String nombre;

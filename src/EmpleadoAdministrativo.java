@@ -1,4 +1,4 @@
-public class EmpleadoAdministrativo extends Empleado{ //hereda de la clase empleado
+public class EmpleadoAdministrativo extends Empleado { //hereda de la clase empleado
 
     private double bonifiacion;
 
@@ -25,10 +25,18 @@ public class EmpleadoAdministrativo extends Empleado{ //hereda de la clase emple
                 '}';
     }
 
-    public void mostrarinfo(){
+    public void mostrarinfo() {
         System.out.println("Nombre: " + nombre);
         System.out.println("edad: " + edad);
         System.out.println("Salario base: " + SalarioBase);
         System.out.println("Bonificacion: " + bonifiacion);
     }
+
+    public double salarioA (){
+        double bono = getBonifiacion();
+        return bono + getSalarioBase();
+    }
+
+
+
 }

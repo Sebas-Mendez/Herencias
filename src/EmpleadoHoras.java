@@ -43,4 +43,10 @@ public class EmpleadoHoras extends Empleado{
         System.out.println("Horas Trabajadas: " + horasTrabajadas);
         System.out.println("Valor hora: " + valorHora);
     }
+
+    public double salarioH (){
+        int horas = getHorasTrabajadas();
+        return horas;
+    }
+
 }

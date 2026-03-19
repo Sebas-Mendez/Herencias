@@ -47,9 +47,16 @@ public class Empleado {
     }
 
 
-    public void mostrarinfo(){
+    public void mostrarinfo() {
         System.out.println("Nombre: " + nombre);
         System.out.println("edad: " + edad);
         System.out.println("Salario base: " + SalarioBase);
     }
+
+    public double salario (double salario){
+        double newSalario = SalarioBase + salario;
+        return newSalario;
+    }
+
 }
+
