@@ -128,7 +128,7 @@ public class Main {
                                         case 1:
                                             System.out.println("Sistema de Aumentar salario");
                                             System.out.println("Ingrese el aumento del salario");
-                                            E2.salario(teclado.nextDouble());
+                                            System.out.println("Nuevo Salario base: " + E2.salario(teclado.nextDouble()));
                                             break;
                                         case 2:
                                             System.out.println("Sistema de Calcular salario");
@@ -153,10 +153,11 @@ public class Main {
                                         case 1:
                                             System.out.println("Sistema de Aumentar salario");
                                             System.out.println("Ingrese el aumento del salario");
-                                            System.out.println(E2.salario(teclado.nextDouble()));
+                                            System.out.println("Nuevo Salario base: " + E2.salario(teclado.nextDouble()));
                                             break;
                                         case 2:
                                             System.out.println("Sistema de Calcular salario");
+                                            System.out.println("El salario total es: " + ((EmpleadoHoras) E2).salarioH());
 
                                             break;
                                     }break;
@@ -177,10 +178,11 @@ public class Main {
                                         case 1:
                                             System.out.println("Sistema de Aumentar salario");
                                             System.out.println("Ingrese el aumento del salario");
-                                            System.out.println(E2.salario(teclado.nextDouble()));
+                                            System.out.println("Nuevo Salario base: " + E2.salario(teclado.nextDouble()));
                                             break;
                                         case 2:
                                             System.out.println("Sistema de Calcular salario");
+                                            System.out.println("El salario total es: " + ((EmpleadoVentas) E2).salarioV());
 
                                             break;
                                     }break;

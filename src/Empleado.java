@@ -54,8 +54,8 @@ public class Empleado {
     }
 
     public double salario (double salario){
-        double newSalario = SalarioBase + salario;
-        return newSalario;
+        SalarioBase = salario + getSalarioBase();
+        return SalarioBase;
     }
 
 }

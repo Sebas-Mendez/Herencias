@@ -45,6 +45,6 @@ public class EmpleadoVentas extends Empleado{ //herencia de la clase empleado
     }
 
     public double salarioV (){
-        return 0;
+        return getSalarioBase() + (totalVentas * (comision/100));
     }
 }

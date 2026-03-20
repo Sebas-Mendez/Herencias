@@ -45,8 +45,7 @@ public class EmpleadoHoras extends Empleado{
     }
 
     public double salarioH (){
-        int horas = getHorasTrabajadas();
-        return horas;
+        return getSalarioBase() + (horasTrabajadas * valorHora);
     }
 
 }
