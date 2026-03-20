@@ -33,8 +33,7 @@ public class EmpleadoAdministrativo extends Empleado { //hereda de la clase empl
     }
 
     public double salarioA (){
-        double bono = getBonifiacion();
-        return bono + getSalarioBase();
+        return getBonifiacion() + getSalarioBase();
     }
 
 
